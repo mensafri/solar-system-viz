@@ -1,0 +1,54 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#000010"/>
+  
+  <!-- Stars -->
+  <circle cx="100" cy="100" r="1" fill="white" opacity="0.5"/>
+  <circle cx="200" cy="500" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="500" cy="200" r="1" fill="white" opacity="0.4"/>
+  <circle cx="800" cy="100" r="2" fill="white" opacity="0.6"/>
+  <circle cx="1100" cy="400" r="1" fill="white" opacity="0.5"/>
+  <circle cx="50" cy="300" r="1.5" fill="white" opacity="0.3"/>
+  <circle cx="900" cy="550" r="1" fill="white" opacity="0.8"/>
+  <circle cx="300" cy="50" r="1.2" fill="white" opacity="0.4"/>
+  
+  <!-- Sun -->
+  <circle cx="600" cy="315" r="80" fill="#FDB813">
+    <animate attributeName="r" values="80;82;80" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.9;1" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="600" cy="315" r="90" fill="#FDB813" opacity="0.3"/>
+  <circle cx="600" cy="315" r="110" fill="#FDB813" opacity="0.1"/>
+  
+  <!-- Orbits -->
+  <ellipse cx="600" cy="315" rx="140" ry="40" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1"/>
+  <ellipse cx="600" cy="315" rx="200" ry="60" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1"/>
+  <ellipse cx="600" cy="315" rx="280" ry="80" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1"/>
+  <ellipse cx="600" cy="315" rx="380" ry="110" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1"/>
+  
+  <!-- Planets -->
+  <!-- Mercury -->
+  <circle cx="480" cy="330" r="8" fill="#A5A5A5"/>
+  
+  <!-- Venus -->
+  <circle cx="500" cy="350" r="12" fill="#E3BB76"/>
+  
+  <!-- Earth -->
+  <circle cx="750" cy="350" r="13" fill="#4F4CB0"/>
+  
+  <!-- Mars -->
+  <circle cx="820" cy="290" r="10" fill="#E27B58"/>
+  
+  <!-- Jupiter -->
+  <circle cx="350" cy="280" r="35" fill="#C88B3A"/>
+  
+  <!-- Saturn -->
+  <g transform="translate(950, 300) rotate(20)">
+    <ellipse cx="0" cy="0" rx="50" ry="12" fill="none" stroke="#C5AB6E" stroke-width="8" opacity="0.8"/>
+    <circle cx="0" cy="0" r="28" fill="#E3E0C0"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="600" y="550" font-family="Arial, sans-serif" font-size="48" fill="white" text-anchor="middle" font-weight="bold" letter-spacing="2">SOLAR SYSTEM</text>
+  <text x="600" y="590" font-family="Arial, sans-serif" font-size="24" fill="#AAAAAA" text-anchor="middle" letter-spacing="4">VISUALIZATION</text>
+</svg>

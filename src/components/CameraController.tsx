@@ -73,17 +73,15 @@ export const CameraController = () => {
         controls.update();
       }
     } else if (controls) {
-      // When no planet is selected, smoothly return to sun (origin)
+      // When no planet is selected, smoothly return target to sun (origin)
       const sunPos = new Vector3(0, 0, 0);
-      const defaultCamPos = new Vector3(0, 50, 100);
       
       // Smoothly move target back to sun
-      controls.target.lerp(sunPos, 3 * delta);
-      
-      // Smoothly move camera back to default position
-      camera.position.lerp(defaultCamPos, 1.5 * delta);
-      
-      controls.update();
+      // Only lerp if distance is significant to avoid constant updates
+      if (controls.target.distanceTo(sunPos) > 0.01) {
+        controls.target.lerp(sunPos, 3 * delta);
+        controls.update();
+      }
     }
   }, -1);
 

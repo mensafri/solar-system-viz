@@ -1,0 +1,20 @@
+{
+  "name": "Solar System Visualization",
+  "short_name": "Solar System",
+  "description": "Interactive 3D visualization of our solar system with educational information",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000010",
+  "theme_color": "#000010",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["education", "science"],
+  "lang": "en-US",
+  "dir": "ltr"
+}
