@@ -72,9 +72,19 @@ export const CameraController = () => {
         
         controls.update();
       }
+    } else if (controls) {
+      // When no planet is selected, smoothly return to sun (origin)
+      const sunPos = new Vector3(0, 0, 0);
+      const defaultCamPos = new Vector3(0, 50, 100);
+      
+      // Smoothly move target back to sun
+      controls.target.lerp(sunPos, 3 * delta);
+      
+      // Smoothly move camera back to default position
+      camera.position.lerp(defaultCamPos, 1.5 * delta);
+      
+      controls.update();
     }
-    // When no planet is selected, just let OrbitControls work freely
-    // Don't force any camera position or target
   }, -1);
 
   return null;

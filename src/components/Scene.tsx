@@ -16,7 +16,12 @@ export const Scene = () => {
       <AsteroidBelt />
       <CameraController />
       
-      <OrbitControls minDistance={10} maxDistance={200} enablePan={false} />
+      <OrbitControls 
+        minDistance={10} 
+        maxDistance={200} 
+        enablePan={false}
+        makeDefault
+      />
       
       <EffectComposer>
         <Bloom luminanceThreshold={0.5} luminanceSmoothing={0.9} height={300} intensity={1.5} />
